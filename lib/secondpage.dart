@@ -127,7 +127,7 @@ class SecondPage extends StatelessWidget {
               width: 80,
               child: Icon(
                 Icons.shopping_cart_rounded,
-                color: Colors.red,
+                color: Colors.blue,
                 size: 40,
               ),
             ),
@@ -136,7 +136,7 @@ class SecondPage extends StatelessWidget {
               width: 80,
               child: Icon(
                 Icons.dashboard_outlined,
-                color: Colors.red,
+                color: Colors.blueGrey,
                 size: 40,
               ),
             ),
@@ -145,7 +145,7 @@ class SecondPage extends StatelessWidget {
               width: 80,
               child: Icon(
                 Icons.favorite,
-                color: Colors.red,
+                color: Colors.green,
                 size: 40,
               ),
             ),
@@ -154,7 +154,7 @@ class SecondPage extends StatelessWidget {
               width: 80,
               child: Icon(
                 Icons.person,
-                color: Colors.red,
+                color: Colors.tealAccent,
                 size: 40,
               ),
             ),
