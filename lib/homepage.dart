@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:test/new.dart';
 import 'package:test/secondpage.dart';
+import 'package:test/widget/button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     NewPage(
                       image: Image.network(
-                        'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/2KL6JYQYH4I6REYMIWBYVUGXPI.jpg&w=1440',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -170,31 +171,9 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(top: 15),
-              height: 50,
-              width: 200,
-              child: ElevatedButton(
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Color(0xfffc1c00)),
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(13),
-                    ),
-                  ),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SecondPage()),
-                  );
-                },
-                child: Text(
-                  'Order Now',
-                  style: TextStyle(),
-                ),
-              ),
+            Button(
+              text: 'Order Now',
+              page: SecondPage(),
             ),
           ],
         ),

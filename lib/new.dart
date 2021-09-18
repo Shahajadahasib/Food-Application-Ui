@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 
 class NewPage extends StatelessWidget {
-  Widget image;
-  NewPage({
+  final Widget image;
+  const NewPage({
     Key? key,
     required this.image,
   }) : super(key: key);
